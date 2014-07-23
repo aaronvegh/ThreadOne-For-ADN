@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Theme Name</key>
+	<string>Dark</string>
+	<key>MUNWindowBackgroundColor</key>
+	<string>#555555</string>
+	<key>MUNHighlightColor</key>
+	<string>#77c2ff</string>
+	<key>MUNHighToneColor</key>
+	<string>#666666</string>
+	<key>MUNLowToneColor</key>
+	<string>#767676</string>
+	<key>MUNHeaderTextColor</key>
+	<string>#877F77</string>
+	<key>MUNChatShadowColor</key>
+	<string>#494949</string>
+	<key>MUNBodyTextColor</key>
+	<string>#FFFFFF</string>
+	<key>MUNHighToneDividerColor</key>
+	<string>#FFFFFF</string>
+	<key>MUNLowToneDividerColor</key>
+	<string>#FFFFFF</string>
+	<key>MUNTimestampTextColor</key>
+	<string>#fefefe</string>
+	<key>MUNDatelineTextColor</key>
+	<string>#CCCCCC</string>
+	<key>MUNTitleBarStartColor</key>
+	<string>#444444</string>
+	<key>MUNInactiveTitleBarStartColor</key>
+	<string>#434343</string>
+	<key>MUNTitleBarEndColor</key>
+	<string>#555555</string>
+	<key>MUNInactiveTitleBarEndColor</key>
+	<string>#545454</string>
+	<key>MUNTitleBorderColor</key>
+	<string>#333333</string>
+	<key>MUNThemeFont</key>
+	<string>Avenir</string>
+	<key>MUNBoldThemeFont</key>
+	<string>Avenir-Heavy</string>
+	<key>MUNHeaderFontSize</key>
+	<integer>18</integer>
+	<key>MUNBodyFontSize</key>
+	<integer>14</integer>
+	<key>MUNSmallerFontSize</key>
+	<integer>11</integer>
+	<key>MUNChatNameSize</key>
+	<integer>16</integer>
+	<key>MUNNewChatButtonName</key>
+	<string>darkNew</string>
+	<key>MUNChatsButtonName</key>
+	<string>darkChat</string>
+</dict>
+</plist>

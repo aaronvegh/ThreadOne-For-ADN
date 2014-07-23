@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4511"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="INOWindowController">
+            <connections>
+                <outlet property="titleHeaderView" destination="K7W-i9-y9g" id="fNl-VE-V5f"/>
+                <outlet property="window" destination="pCC-u1-mkQ" id="Ead-go-ERR"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="ThreadOne" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="pCC-u1-mkQ" customClass="INOCustomWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="122" y="207" width="380" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="FPt-Xm-xlZ">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+        </window>
+        <customView id="K7W-i9-y9g" customClass="MUNTitleHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="J11-lO-bbo">
+                    <rect key="frame" x="11" y="7" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="UZH-7M-2FC"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="1Pm-uO-H0B">
+                    <rect key="frame" x="46" y="2" width="114" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="W3e-iY-TPu">
+                        <font key="font" size="11" name="Avenir-Book"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lgG-dp-nCd">
+                    <rect key="frame" x="46" y="17" width="114" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="wq9-kP-QzK">
+                        <font key="font" size="11" name="Avenir-Heavy"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="SKd-CV-76E">
+                    <rect key="frame" x="311" y="18" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Chats" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hSl-lu-fiu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showChats:" target="-2" id="Rb9-4h-blf"/>
+                    </connections>
+                </button>
+                <button id="m4Q-Yo-FUr">
+                    <rect key="frame" x="349" y="20" width="21" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="New" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="wBL-AE-2Jc">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="newChat:" target="-2" id="mKe-e2-4cr"/>
+                    </connections>
+                </button>
+                <customView id="Vuf-dP-fhe">
+                    <rect key="frame" x="327" y="34" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="f72-dP-LH3">
+                    <rect key="frame" x="305" y="6" width="38" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Chats" id="yDR-c9-mQY">
+                        <font key="font" size="10" name="Avenir-Book"/>
+                        <color key="textColor" red="0.094117656349999995" green="0.49019610879999997" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="WEL-Db-rnz">
+                    <rect key="frame" x="340" y="5" width="38" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="New" id="HRP-fL-wLP">
+                        <font key="font" size="10" name="Avenir-Book"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="chatsButton" destination="SKd-CV-76E" id="Yjk-WU-5he"/>
+                <outlet property="chatsButtonName" destination="f72-dP-LH3" id="PdL-BC-cDd"/>
+                <outlet property="chatsButtonNewPip" destination="Vuf-dP-fhe" id="eMx-Jc-7gE"/>
+                <outlet property="currentUserAvatar" destination="J11-lO-bbo" id="gWe-Pk-Ure"/>
+                <outlet property="currentUserFullname" destination="lgG-dp-nCd" id="ika-sg-P8n"/>
+                <outlet property="currentUsername" destination="1Pm-uO-H0B" id="PrL-cO-g4Z"/>
+                <outlet property="makeNewChatButton" destination="m4Q-Yo-FUr" id="5wT-xw-Hdv"/>
+                <outlet property="makeNewChatButtonName" destination="WEL-Db-rnz" id="uzC-RK-GeA"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Chats" width="24" height="24"/>
+        <image name="New" width="24" height="24"/>
+    </resources>
+</document>

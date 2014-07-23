@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MUNPreferencesWindowController">
+            <connections>
+                <outlet property="darkThemeName" destination="ovI-ya-r0o" id="TXb-1n-bGa"/>
+                <outlet property="generalPrefsItem" destination="g8E-AK-1X7" id="A63-NB-Euz"/>
+                <outlet property="lightThemeName" destination="RAj-Od-GrJ" id="lIE-xp-wgn"/>
+                <outlet property="loginLaunchCheck" destination="M0c-BL-iG5" id="riY-Q9-62c"/>
+                <outlet property="preferencesToolbar" destination="bVZ-en-MIW" id="Hyw-Ue-EXH"/>
+                <outlet property="rateButton" destination="Q6R-lf-JFZ" id="WZ7-GP-L4H"/>
+                <outlet property="soundNotificationOptions" destination="aN3-kB-Du4" id="rCf-vu-sH6"/>
+                <outlet property="soundOptions" destination="hiN-jg-xU4" id="NYz-TX-N7C"/>
+                <outlet property="soundPrefsItem" destination="heL-Md-P6p" id="gmn-FW-sOC"/>
+                <outlet property="soundTypeOptions" destination="aN3-kB-Du4" id="iy6-2k-fZ9"/>
+                <outlet property="tabView" destination="c8K-as-mcH" id="0dz-zC-xar"/>
+                <outlet property="themePrefsItem" destination="Xkd-12-BcO" id="KVv-nL-9YL"/>
+                <outlet property="usernameDisplayCheck" destination="N04-l1-gpi" id="TKr-mF-HJX"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" appearanceType="aqua" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="135" y="492" width="285" height="186"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView type="noTabsNoBorder" initialItem="P61-Za-5Fw" id="c8K-as-mcH">
+                        <rect key="frame" x="0.0" y="0.0" width="285" height="186"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem identifier="GeneralPreferences" id="P61-Za-5Fw" userLabel="General Preferences">
+                                <view key="view" id="FkQ-dJ-Eck">
+                                    <rect key="frame" x="0.0" y="0.0" width="285" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="IKI-cw-tGH">
+                                            <rect key="frame" x="92" y="149" width="110" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Launch at Login?" id="dtq-21-Pfc">
+                                                <font key="font" size="13" name="Avenir-Book"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button focusRingType="none" id="M0c-BL-iG5">
+                                            <rect key="frame" x="64" y="149" width="26" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="fTb-sL-MMT">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="chooseLoginLaunchOption:" target="-2" id="8G0-gI-cIZ"/>
+                                            </connections>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="WNp-LN-Gfu">
+                                            <rect key="frame" x="92" y="123" width="109" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Show usernames" id="Nz7-na-KUH">
+                                                <font key="font" size="13" name="Avenir-Book"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button focusRingType="none" id="N04-l1-gpi">
+                                            <rect key="frame" x="64" y="123" width="26" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="FRM-Cm-3QG">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="chooseUsernameDisplayOption:" target="-2" id="bvV-lx-H6w"/>
+                                            </connections>
+                                        </button>
+                                        <button wantsLayer="YES" focusRingType="none" appearanceType="aqua" verticalHuggingPriority="750" id="Q6R-lf-JFZ" customClass="MUNBluePillButton">
+                                            <rect key="frame" x="59" y="17" width="162" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" title="Rate ThreadOne" bezelStyle="shadowlessSquare" alignment="center" focusRingType="none" inset="2" id="wze-df-zbj" customClass="MUNBluePillButtonCell">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" size="13" name="Avenir-Book"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickRateButton:" target="-2" id="klR-sv-3ym"/>
+                                            </connections>
+                                        </button>
+                                        <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="iIz-Ua-9Ec">
+                                            <rect key="frame" x="18" y="85" width="245" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rate ThreadOne on the Mac App Store" id="fSH-aU-rQ9">
+                                                <font key="font" size="13" name="Avenir-Heavy"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="bMj-iz-qpJ">
+                                            <rect key="frame" x="18" y="49" width="236" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Rating helps more people find ThreadOne; thanks for your support!" id="awA-3i-eRc">
+                                                <font key="font" size="12" name="Avenir-Book"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem identifier="ThemePreferences" id="dNF-kW-5Yv" userLabel="Theme Preferences">
+                                <view key="view" id="l79-hd-m77">
+                                    <rect key="frame" x="0.0" y="0.0" width="285" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uJ4-g2-me8">
+                                            <rect key="frame" x="37" y="43" width="63" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="lightPreview" id="gYS-YR-QW0"/>
+                                        </imageView>
+                                        <imageView appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="r9S-tS-ma9">
+                                            <rect key="frame" x="176" y="43" width="63" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="darkPreview" id="AoA-lo-vf4"/>
+                                        </imageView>
+                                        <button appearanceType="aqua" id="RAj-Od-GrJ">
+                                            <rect key="frame" x="23" y="144" width="119" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="radio" title="Light (Default)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="EEx-Jj-h1w">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="chooseThemeOption:" target="-2" id="hhe-m7-jvM"/>
+                                            </connections>
+                                        </button>
+                                        <button appearanceType="aqua" id="ovI-ya-r0o">
+                                            <rect key="frame" x="162" y="144" width="73" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="radio" title="Dark" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="957-fX-RdK">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="chooseThemeOption:" target="-2" id="u7v-j0-nu6"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem identifier="SoundPreferences" id="QA0-Rs-r5R" userLabel="Sound Preferences">
+                                <view key="view" id="4Un-56-xzi">
+                                    <rect key="frame" x="0.0" y="0.0" width="285" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="gBR-OQ-yPd">
+                                            <rect key="frame" x="20" y="149" width="76" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sound Set: " id="oKm-9Y-FTQ">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <popUpButton focusRingType="none" verticalHuggingPriority="750" id="hiN-jg-xU4">
+                                            <rect key="frame" x="105" y="142" width="162" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="aD9-Bv-cnb">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" title="OtherViews" id="opr-sv-dUG">
+                                                    <items>
+                                                        <menuItem title="ThreadOne" id="eRf-Kb-plb"/>
+                                                        <menuItem title="Munenori" id="2e4-NE-bun"/>
+                                                        <menuItem title="None" id="O4y-aS-gLw"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <action selector="chooseSoundOption:" target="-2" id="Ddv-Wh-W02"/>
+                                            </connections>
+                                        </popUpButton>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="SwP-bG-Xxl">
+                                            <rect key="frame" x="20" y="124" width="83" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Play Sounds:" id="WIY-YQ-6DJ">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <popUpButton focusRingType="none" verticalHuggingPriority="750" id="aN3-kB-Du4">
+                                            <rect key="frame" x="105" y="117" width="162" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="C27-2c-BMk">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" title="OtherViews" id="wWk-bN-Eg4">
+                                                    <items>
+                                                        <menuItem title="All" id="FP2-oq-QO5"/>
+                                                        <menuItem title="Notifications Only" id="Okz-k2-XEU"/>
+                                                    </items>
+                                                </menu>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <action selector="chooseSoundTypeOption:" target="-2" id="4XQ-g8-HQH"/>
+                                            </connections>
+                                        </popUpButton>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                        <connections>
+                            <binding destination="-2" name="selectedIdentifier" keyPath="self.preferencesToolbar.selectedItemIdentifier" id="gYa-s4-ict">
+                                <dictionary key="options">
+                                    <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </tabView>
+                </subviews>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="F4436DAD-26FE-4E61-9A8D-C2E717492BC8" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="bVZ-en-MIW">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="3468EBAE-651C-4C87-8C65-0E134EB721B5" explicitItemIdentifier="GeneralPreferences" label="General" paletteLabel="General" image="19-gear" selectable="YES" id="g8E-AK-1X7">
+                        <connections>
+                            <action selector="takeSelectedTabViewItemFromSender:" target="c8K-as-mcH" id="BbB-Pb-5Pq"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="DFFC9AD8-9219-4B74-8791-A067A842400A" explicitItemIdentifier="ThemePreferences" label="Themes" paletteLabel="Themes" tag="1" image="165-glasses-3" selectable="YES" id="Xkd-12-BcO">
+                        <connections>
+                            <action selector="takeSelectedTabViewItemFromSender:" target="c8K-as-mcH" id="pPz-6g-agd"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="936CFD27-3D02-4524-BFDE-C5781CA81880" explicitItemIdentifier="SoundPreferences" label="Sounds" paletteLabel="Sounds" tag="2" image="264-sound-on" selectable="YES" id="heL-Md-P6p">
+                        <connections>
+                            <action selector="takeSelectedTabViewItemFromSender:" target="c8K-as-mcH" id="LxE-ge-CRJ"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="g8E-AK-1X7"/>
+                    <toolbarItem reference="Xkd-12-BcO"/>
+                    <toolbarItem reference="heL-Md-P6p"/>
+                </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="3HG-GY-thg"/>
+                </connections>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="4"/>
+            </connections>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="Kew-eJ-Jsa"/>
+    </objects>
+    <resources>
+        <image name="165-glasses-3" width="32" height="32"/>
+        <image name="19-gear" width="26" height="26"/>
+        <image name="264-sound-on" width="30" height="25"/>
+        <image name="darkPreview" width="63" height="100"/>
+        <image name="lightPreview" width="63" height="100"/>
+    </resources>
+</document>

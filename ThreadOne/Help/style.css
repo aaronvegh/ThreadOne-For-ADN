@@ -1,0 +1,27 @@
+* {
+    margin:0px;
+    border:0px;
+    padding:0px;
+}
+
+body {
+    background-color:#f9f9f9;
+    padding:30px;
+}
+
+h1, p, li, blockquote {
+    font-family:"Avenir", sans-serif;
+	margin-bottom:10px;
+}
+
+ul {
+    margin-left:20px;
+    margin-top:15px;
+	margin-bottom:15px;
+}
+
+blockquote {
+	padding:10px;
+	background-color:#eee;
+	border:1px solid #999;
+}

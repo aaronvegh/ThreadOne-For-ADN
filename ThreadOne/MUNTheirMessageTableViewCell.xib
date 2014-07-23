@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <tableCellView identifier="theirMessageView" id="zRJ-hE-Zyq" customClass="MUNTheirMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView placeholderIntrinsicWidth="344" placeholderIntrinsicHeight="105" translatesAutoresizingMaskIntoConstraints="NO" id="Hvv-yH-jde">
+                    <rect key="frame" x="10" y="5" width="344" height="90"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FZj-rj-szN">
+                            <rect key="frame" x="10" y="38" width="45" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="7tm-hw-gm7"/>
+                                <constraint firstAttribute="width" constant="45" id="gad-cl-8Mi"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="2DP-3T-pj4"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="748" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKD-hk-pdM">
+                            <rect key="frame" x="259.99999961151264" y="58" width="72" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="68" id="brE-fD-TEq"/>
+                                <constraint firstAttribute="height" constant="23" id="hFD-iw-Wjr"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="1h" id="iJ8-O9-Rfe">
+                                <font key="font" size="11" name="Avenir-Light"/>
+                                <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="N5N-s5-JKg">
+                            <rect key="frame" x="60" y="60" width="276" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="R59-SI-Dxc"/>
+                            </constraints>
+                        </customView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rM4-zu-Esv">
+                            <rect key="frame" x="60" y="61" width="211" height="25"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="User's Name Here" id="NQm-dV-i4I">
+                                <font key="font" size="15" name="Avenir-Book"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="752" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rS6-e2-HMm" customClass="HyperlinkTextField">
+                            <rect key="frame" x="60" y="10.000001057334533" width="232" height="46"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" title="It's already better than it was but I can see that there's more to be done." id="Pjt-4V-2VU">
+                                <font key="font" size="13" name="Avenir-Book"/>
+                                <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                        </textField>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Z4O-EU-yAr">
+                            <rect key="frame" x="301" y="21.000001057334529" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="Bco-gh-Itg"/>
+                                <constraint firstAttribute="height" constant="35" id="z2T-zY-4Zk"/>
+                            </constraints>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="N5N-s5-JKg" firstAttribute="leading" secondItem="Hvv-yH-jde" secondAttribute="leading" constant="60" id="4Zw-hG-aVJ"/>
+                        <constraint firstAttribute="trailing" secondItem="rS6-e2-HMm" secondAttribute="trailing" constant="54" id="HEK-If-WFj"/>
+                        <constraint firstItem="rS6-e2-HMm" firstAttribute="top" secondItem="Hvv-yH-jde" secondAttribute="top" constant="34" id="IzC-z8-BaB"/>
+                        <constraint firstAttribute="bottom" secondItem="rS6-e2-HMm" secondAttribute="bottom" constant="10" id="KMc-tK-H56"/>
+                        <constraint firstItem="Z4O-EU-yAr" firstAttribute="top" secondItem="N5N-s5-JKg" secondAttribute="bottom" constant="4" id="Y1K-HN-mEo"/>
+                        <constraint firstAttribute="trailing" secondItem="Z4O-EU-yAr" secondAttribute="trailing" constant="8" id="Yva-of-b6S"/>
+                        <constraint firstItem="FZj-rj-szN" firstAttribute="leading" secondItem="Hvv-yH-jde" secondAttribute="leading" constant="10" id="bd7-48-4LL"/>
+                        <constraint firstItem="rM4-zu-Esv" firstAttribute="leading" secondItem="FZj-rj-szN" secondAttribute="trailing" constant="7" id="eGS-o5-yRM"/>
+                        <constraint firstItem="FZj-rj-szN" firstAttribute="top" secondItem="Hvv-yH-jde" secondAttribute="top" constant="7" id="fc0-RU-ol7"/>
+                        <constraint firstAttribute="trailing" secondItem="WKD-hk-pdM" secondAttribute="trailing" constant="13" id="h1P-8F-DIH"/>
+                        <constraint firstItem="WKD-hk-pdM" firstAttribute="top" secondItem="Hvv-yH-jde" secondAttribute="top" constant="9" id="itt-Jd-beE"/>
+                        <constraint firstAttribute="trailing" secondItem="rM4-zu-Esv" secondAttribute="trailing" constant="75" id="ixi-AT-xYy"/>
+                        <constraint firstItem="rS6-e2-HMm" firstAttribute="leading" secondItem="FZj-rj-szN" secondAttribute="trailing" constant="7" id="k3R-Z6-ykz"/>
+                        <constraint firstItem="rM4-zu-Esv" firstAttribute="top" secondItem="Hvv-yH-jde" secondAttribute="top" constant="4" id="kMQ-vn-PU2"/>
+                        <constraint firstAttribute="trailing" secondItem="N5N-s5-JKg" secondAttribute="trailing" constant="8" id="mcZ-WM-tKu"/>
+                        <constraint firstItem="N5N-s5-JKg" firstAttribute="top" secondItem="rM4-zu-Esv" secondAttribute="bottom" id="zfx-tb-DIC"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Hvv-yH-jde" firstAttribute="top" secondItem="zRJ-hE-Zyq" secondAttribute="top" constant="5" id="B8P-wC-7jS"/>
+                <constraint firstItem="Hvv-yH-jde" firstAttribute="centerX" secondItem="zRJ-hE-Zyq" secondAttribute="centerX" id="DFq-0w-CjK"/>
+                <constraint firstItem="Hvv-yH-jde" firstAttribute="leading" secondItem="zRJ-hE-Zyq" secondAttribute="leading" constant="10" id="Dsf-Eg-NrG"/>
+                <constraint firstAttribute="trailing" secondItem="Hvv-yH-jde" secondAttribute="trailing" constant="10" id="JBc-h2-hzC"/>
+                <constraint firstItem="Hvv-yH-jde" firstAttribute="centerY" secondItem="zRJ-hE-Zyq" secondAttribute="centerY" id="X8h-4u-LHK"/>
+                <constraint firstAttribute="bottom" secondItem="Hvv-yH-jde" secondAttribute="bottom" constant="5" id="xhF-hX-G7w"/>
+            </constraints>
+            <connections>
+                <outlet property="attachmentView" destination="Z4O-EU-yAr" id="59o-8d-PtK"/>
+                <outlet property="avatarView" destination="FZj-rj-szN" id="Pqi-GM-e00"/>
+                <outlet property="backgroundView" destination="Hvv-yH-jde" id="KeW-fL-M5N"/>
+                <outlet property="horizontalRule" destination="N5N-s5-JKg" id="bpQ-Au-vgV"/>
+                <outlet property="messageField" destination="rS6-e2-HMm" id="jw8-M4-rAY"/>
+                <outlet property="timeAgo" destination="WKD-hk-pdM" id="kjt-Es-N1h"/>
+                <outlet property="userName" destination="rM4-zu-Esv" id="62h-4t-cFb"/>
+            </connections>
+        </tableCellView>
+    </objects>
+</document>
