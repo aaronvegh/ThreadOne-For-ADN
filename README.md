@@ -3,7 +3,7 @@ ThreadOne-For-ADN
 
 A direct messaging OS X application for App.Net
 
-ThreadOne is available on the [Mac App Store](https://itunes.apple.com/us/app/threadone/id788290980?ls=1&mt=12). With the failure of ADN as a service, and the subsequent destruction of any news users of ThreadOne, I have determined that providing the source code would be the best use of my time investment.
+ThreadOne is available on the [Mac App Store](https://itunes.apple.com/us/app/threadone/id788290980?ls=1&mt=12). With the failure of ADN as a service, and the subsequent destruction of any new users of ThreadOne, I have determined that providing the source code would be the best use of my time investment.
 
 If you wish to run this application yourself, you'll need an [ADN Developer Key](https://account.app.net/settings/); plug that info into the INOAppDelegate.m file; after that you should be able to just "Build & Run".
 
